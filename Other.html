@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+            XSS
+        </title>
+    </header>
+    <body>
+        <svg width="2" height="2">
+            <circle cx="50" cy="50" r="40" stroke="white" stroke-width="4" fill="grey" />
+            <script>
+                alert("Spam Lag :)");
+                for (let i = 0; i < 10; i++) {
+                    window.open("https://www.google.com/search?q=you+have+a+small+penis&source=hp&ei=nR_8YcvvGovLkPIPrKqsiAU&iflsig=AHkkrS4AAAAAYfwtrd4M7DO6TQ38SPglxlRX4pnNzIoW&ved=0ahUKEwiLsqDLleT1AhWLJUQIHSwVC1EQ4dUDCAk&uact=5&oq=you+have+a+small+penis&gs_lcp=Cgdnd3Mtd2l6EAM6DgguEIAEELEDEMcBENEDOhEILhCABBCxAxCDARDHARDRAzoICC4QgAQQsQM6CwgAEIAEELEDEIMBOggIABCABBCxAzoOCAAQjwEQ6gIQjAMQ5QI6DgguEI8BEOoCEIwDEOUCOgUIABCABDoFCC4QgAQ6CggAEIAEELEDEAo6BQguELEDOgsILhCABBDHARCjAjoKCAAQgAQQRhD_AToGCAAQFhAeOggIABAWEAoQHlAAWPdAYMhCaBRwAHgAgAFqiAH9DJIBBDIzLjGYAQCgAQGwAQo&sclient=gws-wiz");
+                }
+            </script>
+        </svg>
+    </body>
+</html>
+
+
+
+
